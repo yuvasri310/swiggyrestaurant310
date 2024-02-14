@@ -25,18 +25,18 @@ const userSchema =new mongoose.Schema({
     email:{
         type:String,
         require:true,
-        unique:true                                           //if repeats the data is not added in mongodb ,duplicate
+        unique:true                                          
     },
     password:{
         type:String,
-        require:true                                          //without this field it can't execute,shows error
+        require:true                                          
     },
     userName:{
         type:String,
         require:true
     }
 
-},{versionKey:false})                                         //version will not show in data field
+},{versionKey:false})                                         
 
 const Users=mongoose.model('userDetails',userSchema)
 
